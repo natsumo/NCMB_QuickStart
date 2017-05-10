@@ -188,7 +188,6 @@ $ pod update
 
 #### SDKをダウンロードして利用する方法
 
-
 __（１）SDKをダウンロードする__
 
 * [GitHubのiOS SDKページ](https://github.com/NIFTYCloud-mbaas/ncmb_ios/)で「Clone or download ▼」＞「Download ZIP」をクリックし、masterブランチのzipファイルをダウンロードします
