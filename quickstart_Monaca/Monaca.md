@@ -34,6 +34,8 @@
 
 * APIキーは後ほどXcodeアプリで使います
 
+<div style="page-break-before:always"></div>
+
 ![Monaca](/common_image/icon_monaca.png)
 
 * [Monaca](https://ja.monaca.io/)にログインし、プロジェクトを作成します
