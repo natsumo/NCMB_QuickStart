@@ -30,7 +30,7 @@
 
 * 「アプリ名」を入力し「新規作成」をクリックすると、APIキー（アプリケーションキーとクライアントキー）が発行されます
 
-    ![APIキー発行](/common_image/create_app2.png)
+ ![APIキー発行](/common_image/create_app2.png)
 
 * APIキーは後ほどXcodeアプリで使います
 
