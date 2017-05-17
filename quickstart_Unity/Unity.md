@@ -1,7 +1,7 @@
 # Unity クイックスタート
-_2017/05/15作成_
+_2017/05/15作成 (2017/05/17修正)_
 
-このページでは、mobile backendをUnityアプリと連携させる手順を紹介します
+ニフティクラウド mobile backend をUnityアプリと連携させる手順を紹介します
 
 ## 目次
 * アプリの新規作成
@@ -11,7 +11,7 @@ _2017/05/15作成_
 * APIキーの設定とSDKの初期化
 * サンプルコードの実装
  * サンプルコード（データストア）
- * アプリを実行してmBaaSのダッシュボードを確認する
+ * アプリを実行してニフティクラウド mobile backend のダッシュボードを確認する
 * 注意事項
 
 <div style="page-break-before:always"></div>
@@ -20,9 +20,9 @@ _2017/05/15作成_
 
 ![ダッシュボード](/common_image/icon_dashboard.png)
 
-* ニフティクラウドmobile backendに[ログイン](https://console.mb.cloud.nifty.com)します
+* ニフティクラウド mobile backend にログインします<br>https://console.mb.cloud.nifty.com
 * ダッシュボードが表示されたら、「アプリの新規作成」を行います
- * すでに別のアプリを作成済みの場合は、ヘッダーの「＋新しいアプリ」をクリックします
+* すでに別のアプリを作成済みの場合は、ヘッダーの「＋新しいアプリ」をクリックします
 
  ![新規アプリケーション作成](/common_image/create_app.png)
 
@@ -47,11 +47,11 @@ _2017/05/15作成_
 
 ## SDKのダウンロード
 
-* 以下のリンクからGithubのリリースページを開き、NCMB.2.x.x.zip(xはバージョン番号)をダウンロードしてください
-
- [__Githubのリリースページ__](https://github.com/NIFTYCloud-mbaas/ncmb_unity/releases)
+* 以下のリンクからGithubのリリースページを開き、NCMB.2.x.x.zip(xはバージョン番号)をダウンロードしてください<br>https://github.com/NIFTYCloud-mbaas/ncmb_unity/releases
 
  ![Unity download](/quickstart_unity/image/sdk_download.png)
+
+<div style="page-break-before:always"></div>
 
 ## SDKをインストールする
 
@@ -60,13 +60,9 @@ _2017/05/15作成_
 * 先ほどダウンロードしたzipファイルを解凍します
 * フォルダ内にある「NCMB.unitypackage」をダブルクリックして、インポートてください
 
-<div style="page-break-before:always"></div>
-
  ![SDKを配置](/quickstart_unity/image/import.png)
 
- ![SDKを配置](/quickstart_unity/image/import_done.png)
-
- <div style="page-break-before:always"></div>
+<div style="page-break-before:always"></div>
 
 ## SDKの読み込み
 
@@ -91,35 +87,29 @@ _2017/05/15作成_
 
 ![Unity](/common_image/icon_unity.png)
 
-* コードを書いていく前に、必ずmBaaSで発行されたAPIキーの設定を行う必要があります
+* コードを書いていく前に、必ずニフティクラウド mobile backend で発行されたAPIキーの設定を行う必要があります
 * アタッチした状態でヒエラルキー（Hierarchy）の「NCMBSettings」をクリックすると、インスペクタ（Inspector）に図のようなアプリケーションキーとクライアントキーの入力欄が表示されます
 
  ![APIキー設定](/quickstart_unity/image/key_setting.png)
-
-- プッシュ通知機能を使用する場合、Use Pushにチェックを入れてください
- - Android向けにプッシュ通知を行う場合、さらにAndroid Sender IDを設定します。
- - 開封通知を行う場合、Use Analyticsにチェックを入れてください。
- - 詳しくは[プッシュ通知の基本的な使い方](/doc/current/push/basic_usage_unity.html)をご覧ください。
-- レスポンスシグネチャの検証を行う場合はResponse Validationにチェックを入れてください
 
 <div style="page-break-before:always"></div>
 
 ![ダッシュボード](/common_image/icon_dashboard.png)
 
-* 上のアプリケーションキーとクライアントキーは、mBaaSのダッシュボードで「アプリの新規作成」を行ったときに発行されたAPIキーに置き換えます
+* 上のアプリケーションキーとクライアントキーは、ニフティクラウド mobile backend のダッシュボードで「アプリの新規作成」を行ったときに発行されたAPIキーに置き換えます
  * アプリ作成時のAPIキー発行画面を閉じてしまった場合は、「アプリ設定」＞「基本」で確認できます。
  * 「コピー」ボタンを使用してコピーしてください。
 
    ![APIキー確認](/common_image/check_apikey.png)
 
 
-* これで連携作業は完了です！サンプルコードを書いて実際にmBaaSを使ってみましょう
+* これで連携作業は完了です！サンプルコードを書いて実際にニフティクラウド mobile backend を使ってみましょう
 
 <div style="page-break-before:always"></div>
 
 ## サンプルコードの実装
 
-* ここまでの作業を行えば、プロジェクト中のどのシーン、どのスクリプトでもmobile backendの機能を使用することができます
+* ここまでの作業を行えば、プロジェクト中のどのシーン、どのスクリプトでもニフティクラウド mobile backend の機能を使用することができます
 * 新しく「空のGame Object」と「C#スクリプト」を作成し、そのスクリプトを空のGame Objectにアタッチします
 
  ![ncmb import](/quickstart_unity/image/ncmb_test_object.png)
@@ -143,19 +133,19 @@ _2017/05/15作成_
 
 ![Unity](/common_image/icon_unity.png)
 
-* 次のコードはmBaaSのデータストアに保存先の「TestClass」というクラスを作成し、「message」というフィールドへ「Hello, NCMB!」というメッセージ（文字列）を保存するものです
+* 次のコードはニフティクラウド mobile backend のデータストアに保存先の「TestClass」というクラスを作成し、「message」というフィールドへ「Hello, NCMB!」というメッセージ（文字列）を保存するものです
 
  ![sample3](/quickstart_unity/image/sample3.png)
 
 <div style="page-break-before:always"></div>
 
-### アプリを実行してmBaaSのダッシュボードを確認する
+### アプリを実行してニフティクラウド mobile backend のダッシュボードを確認する
 
 * アプリを実機またはシュミレーターで実行します
 
 ![ダッシュボード](/common_image/icon_dashboard.png)
 
-* アプリが起動されたら、mBaaSのダッシュボードで「データストア」から、データが保存されていることを確認できます
+* アプリが起動されたら、ニフティクラウド mobile backend のダッシュボードで「データストア」から、データが保存されていることを確認できます
 
  ![DBサンプル結果](/common_image/dbdemo.png)
 

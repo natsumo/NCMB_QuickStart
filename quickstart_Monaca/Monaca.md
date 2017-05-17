@@ -1,9 +1,9 @@
 # Monaca クイックスタート
-_2017/05/15作成_
+_2017/05/15作成 (2017/05/17修正)_
 
-このページでは、mobile backendをMonacaアプリと連携させる手順を紹介します
+ニフティクラウド mobile backend を Monaca アプリと連携させる手順を紹介します
 
-* [Monaca](https://ja.monaca.io/)とは、HTML5とJavaScriptでハイブリッドアプリがクラウド上で開発できる統合開発環境です。
+* Monacaとは、HTML5とJavaScriptでハイブリッドアプリがクラウド上で開発できる統合開発環境です<br>https://ja.monaca.io/
 * Monacaクラウドでの開発には下記のブラウザ環境が必要です
  * Google Chrome 最新版
 * JavaScript、Adobe Flash が利用可能である必要があります
@@ -14,7 +14,7 @@ _2017/05/15作成_
 * APIキーの設定とSDKの初期化
 * サンプルコードの実装
  * サンプルコード（データストア）
- * アプリを実行してmBaaSのダッシュボードを確認する
+ * アプリを実行してニフティクラウド mobile backend のダッシュボードを確認する
 
 <div style="page-break-before:always"></div>
 
@@ -22,7 +22,7 @@ _2017/05/15作成_
 
 ![ダッシュボード](/common_image/icon_dashboard.png)
 
-* ニフティクラウドmobile backendに[ログイン](https://console.mb.cloud.nifty.com)します
+* ニフティクラウド mobile backend にログインします<br>https://console.mb.cloud.nifty.com
 * ダッシュボードが表示されたら、「アプリの新規作成」を行います
 * すでに別のアプリを作成済みの場合は、ヘッダーの「＋新しいアプリ」をクリックします
 
@@ -39,7 +39,7 @@ _2017/05/15作成_
 
 ![Monaca](/common_image/icon_monaca.png)
 
-* [Monaca](https://ja.monaca.io/)にログインし、プロジェクトを作成します
+* Monacaにログインし、プロジェクトを作成します
  * はじめての方は、上記リンクより会員登録（無料）を行ってください。
 * 「新規プロジェクトの作成」＞「No Framework」を選択して、最小限のテンプレートを「作成」をクリックします
 * 「新規プロジェクト」画面で、プロジェクト名と説明を入力（任意）し、「プロジェクトを作成する」をクリックします
@@ -72,26 +72,25 @@ _2017/05/15作成_
 
  ![SDK導入結果](/quickstart_Monaca/image/monaca04.png)
 
+<div style="page-break-before:always"></div>
+
 ## APIキーの設定とSDKの初期化
 
 ![Monaca](/common_image/icon_monaca.png)
 
-* コードを書いていく前に、必ずmBaaSで発行されたAPIキーの設定とSDKの初期化を行う必要があります
+* コードを書いていく前に、必ずニフティクラウド mobile backend で発行されたAPIキーの設定とSDKの初期化を行う必要があります
 * `index.html`の`<script>`と`</script>`の間に次のコードを書きます
 
  ![SDKの初期化](/quickstart_Monaca/image/sdk_init.png)
 
-<div style="page-break-before:always"></div>
-
 ![ダッシュボード](/common_image/icon_dashboard.png)
 
-* 上の「`YOUR_APPLICATION_KEY`」と「`YOUR_CLIENT_KEY`」は、mBaaSのダッシュボードで「アプリの新規作成」を行ったときに発行されたAPIキーに置き換えます
- * アプリ作成時のAPIキー発行画面を閉じてしまった場合は、「アプリ設定」＞「基本」で確認できます。
- * 「コピー」ボタンを使用してコピーしてください。
+* 上の「`YOUR_APPLICATION_KEY`」と「`YOUR_CLIENT_KEY`」は、ニフティクラウド mobile backend のダッシュボードで「アプリの新規作成」を行ったときに発行されたAPIキーに置き換えます
+ * アプリ作成時のAPIキー発行画面を閉じてしまった場合は、「アプリ設定」＞「基本」で確認できます。「コピー」ボタンを使用してコピーしてください。
 
    ![APIキー確認](/common_image/check_apikey.png)
 
-* これで連携作業は完了です！サンプルコードを書いて実際にmBaaSを使ってみましょう
+* これで連携作業は完了です！実際に使ってみましょう
 
 <div style="page-break-before:always"></div>
 
@@ -109,21 +108,21 @@ _2017/05/15作成_
 
 ### サンプルコード（データストア）
 
-* 次のコードはmBaaSのデータストアに保存先の「TestClass」というクラスを作成し、「message」というフィールドへ「Hello, NCMB!」というメッセージ（文字列）を保存するものです
+* 次のコードはニフティクラウド mobile backend のデータストアに保存先の「TestClass」というクラスを作成し、「message」というフィールドへ「Hello, NCMB!」というメッセージ（文字列）を保存するものです
 
  ![sample2](/quickstart_Monaca/image/sample2.png)
 
 <div style="page-break-before:always"></div>
 
-### アプリを実行してmBaaSのダッシュボードを確認する
+### アプリを実行してニフティクラウド mobile backend のダッシュボードを確認する
 
 * 「保存」をクリックして保存します
 * アプリを実行します
  * ブラウザ画面上で実行する場合は「プレビュー」をクリックします
- * [Monaca](https://ja.monaca.io/debugger.html)デバッガーで実行する場合は「実機デバッグ」をクリックします
+ * Monacaデバッガーで実行する場合は「実機デバッグ」をクリックします<br>https://ja.monaca.io/debugger.html
 
 ![ダッシュボード](/common_image/icon_dashboard.png)
 
-* アプリが起動されたら、mBaaSのダッシュボードで「データストア」から、データが保存されていることを確認できます
+* アプリが起動されたら、ニフティクラウド mobile backend のダッシュボードで「データストア」から、データが保存されていることを確認できます
 
  ![DBサンプル結果](/common_image/dbdemo.png)

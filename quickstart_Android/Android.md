@@ -1,7 +1,7 @@
 # Android クイックスタート
-_2017/05/15作成_
+_2017/05/15作成 (2017/05/17修正)_
 
-このページでは、mobile backendをAndroidアプリを連携させる手順を紹介します
+ニフティクラウド mobile backend を Android アプリを連携させる手順を紹介します
 
 ## 目次
 * アプリの新規作成
@@ -12,7 +12,7 @@ _2017/05/15作成_
 * APIキーの設定とSDKの初期化
 * サンプルコードの実装
  * サンプルコード（データストア）
- * アプリを実行してmBaaSのダッシュボードを確認する
+ * アプリを実行してニフティクラウド mobile backend のダッシュボードを確認する
 
 <div style="page-break-before:always"></div>
 
@@ -20,9 +20,9 @@ _2017/05/15作成_
 
 ![ダッシュボード](/common_image/icon_dashboard.png)
 
-* ニフティクラウドmobile backendに[ログイン](https://console.mb.cloud.nifty.com)します
+* ニフティクラウド mobile backend にログインします<br>https://console.mb.cloud.nifty.com
 * ダッシュボードが表示されたら、「アプリの新規作成」を行います
- * すでに別のアプリを作成済みの場合は、ヘッダーの「＋新しいアプリ」をクリックします
+* すでに別のアプリを作成済みの場合は、ヘッダーの「＋新しいアプリ」をクリックします
 
  ![新規アプリケーション作成](/common_image/create_app.png)
 
@@ -45,14 +45,12 @@ _2017/05/15作成_
 
 ## SDKのダウンロード
 
-*  [Githubリリースページ](https://github.com/NIFTYCloud-mbaas/ncmb_android/releases)の NCMB.x.x.x.zip ボタンからダウンロードしてください
- *  最新版をダウンロードしてください。
- * zipファイルの中身に、NCMB.jarがあります。
+*  下記Githubリリースページ NCMB.x.x.x.zip ボタンからダウンロードしてください<br>https://github.com/NIFTYCloud-mbaas/ncmb_android/releases
+ * 最新版をダウンロードしてください。
+ * zipファイルの中身に、NCMB.jar があります。
 
 ## SDKのインストール
-
- * このSDKでは、以下のライブラリを使用しています。
-  * __Gson__
+Android SDKでは、__Gson__ ライブラリを使用しています。
 
 ![AndroidStudio](/common_image/icon_androidstudio.png)
 
@@ -61,11 +59,11 @@ _2017/05/15作成_
 
     ![jarファイルをコピー](/quickstart_android/image/jar_file.png)
 
-* app/build.gradleファイルに以下を追加します
+ * app/build.gradleファイルに以下を追加します
 
- ![SDKのダウンロード](/quickstart_android/image/sdk_dl.png)
+    ![SDKのダウンロード](/quickstart_android/image/sdk_dl.png)
 
- ![jarファイルをコピー](/quickstart_android/image/gradle_file.png)
+    ![jarファイルをコピー](/quickstart_android/image/gradle_file.png)
 
 <div style="page-break-before:always"></div>
 
@@ -108,7 +106,7 @@ _2017/05/15作成_
 
 ![ダッシュボード](/common_image/icon_dashboard.png)
 
-* 上の「`APP_KEY`」と「`CLIENT_KEY`」は、mBaaSのダッシュボードで「アプリの新規作成」を行ったときに発行されたAPIキーに置き換えます
+* 上の「`APP_KEY`」と「`CLIENT_KEY`」は、ニフティクラウド mobile backend のダッシュボードで「アプリの新規作成」を行ったときに発行されたAPIキーに置き換えます
  * アプリ作成時のAPIキー発行画面を閉じてしまった場合は、「アプリ設定」＞「基本」で確認できます。
  * 「コピー」ボタンを使用してコピーしてください。
 
@@ -116,7 +114,7 @@ _2017/05/15作成_
 
 
  * これで連携作業は完了です！
- * サンプルコードを書いて実際にmBaaSを使ってみましょう
+ * サンプルコードを書いて実際にニフティクラウド mobile backend を使ってみましょう
 
 <div style="page-break-before:always"></div>
 
@@ -137,19 +135,19 @@ _2017/05/15作成_
 
 ### サンプルコード（データストア）
 
-* 次のコードはmBaaSのデータストアに保存先の「TestClass」というクラスを作成し、「message」というフィールドへ「Hello, NCMB!」というメッセージ（文字列）を保存するものです。
+* 次のコードはニフティクラウド mobile backend のデータストアに保存先の「TestClass」というクラスを作成し、「message」というフィールドへ「Hello, NCMB!」というメッセージ（文字列）を保存するものです。
 
  ![sample3](/quickstart_android/image/sample3.png)
 
 <div style="page-break-before:always"></div>
 
-### アプリを実行してmBaaSのダッシュボードを確認する
+### アプリを実行してニフティクラウド mobile backend のダッシュボードを確認する
 
 * アプリを実機またはシミュレーターで実行します
 
 ![ダッシュボード](/common_image/icon_dashboard.png)
 
 
-* アプリが起動されたら、mBaaSのダッシュボードで「データストア」から、データが保存されていることを確認できます
+* アプリが起動されたら、ニフティクラウド mobile backend のダッシュボードで「データストア」から、データが保存されていることを確認できます
 
  ![DBサンプル結果](/common_image/dbdemo.png)
