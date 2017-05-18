@@ -1,5 +1,5 @@
 # Unity クイックスタート
-_2017/05/15作成 (2017/05/17修正)_
+_2017/05/15作成 (2017/05/18修正)_
 
 ニフティクラウド mobile backend をUnityアプリと連携させる手順を紹介します
 
@@ -47,7 +47,7 @@ _2017/05/15作成 (2017/05/17修正)_
 
 ## SDKのダウンロード
 
-* 以下のリンクからGithubのリリースページを開き、NCMB.2.x.x.zip(xはバージョン番号)をダウンロードしてください<br>https://github.com/NIFTYCloud-mbaas/ncmb_unity/releases
+* 以下のリンクからGithubのリリースページを開き、最新バージョンのSDKをダウンロードしてください<br>https://github.com/NIFTYCloud-mbaas/ncmb_unity/releases
 
  ![Unity download](/quickstart_unity/image/sdk_download.png)
 
